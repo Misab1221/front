@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman';
+}
+
+header{
+    background-image:linear-gradient(rgba(0,0,0,0.25),rgba(0,0,0,0.25)), url(hero.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+ul{
+   float: right;
+   list-style-type: none; 
+   margin-top: 25px;
+}
+ul li{
+    display: inline;
+}
+ul li.active a{
+    background-color: rgb(145, 3, 3);
+    color: #000;
+
+}
+ul li a{
+    text-decoration: none;
+    color: rgb(253, 5, 5);
+    font-weight: 900;
+    padding: 5px 20px;
+    border: 1px solid rgba(110, 2, 252, 0.959);
+    transition: 0.6s ease;
+    
+}
+ul li a:hover{
+    background-color: rgb(145, 3, 3);
+    color: #000;
+}
+.title{
+    position: absolute;
+    top:50%;
+    left: 40%;
+    transform: translate(-50%,-50%);
+}
+.title h1{
+    color: rgb(145, 3, 3);
+    font-size: 70px;
+    
+}
+.button{
+    position: absolute;
+    top:65%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.btn{
+    border: 1px solid #fff;
+    padding: 10px 30px;
+    color:#fff;
+    text-decoration: none;
+    transition: 0.6s ease;
+    
+}
+.btn :hover{
+    background-color: #fff;
+    color: #000;
+}
