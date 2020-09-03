@@ -6,6 +6,10 @@ var e_mail = document.forms['form']['e_mail'];
 var spwd = document.forms['form']['spwd'];
 var cpwd = document.forms['form']['cpwd'];
 
+var bookid = document.forms['form']['bookid'];
+var bookname = document.forms['form']['bookname'];
+var author = document.forms['form']['author'];
+var publications = document.forms['form']['publications'];
 
 
 
@@ -65,4 +69,27 @@ function validated()
         alert("Confirm Your Paswsword"); 
         return false; 
     }
+}
+function bookvali()
+{
+    if (bookid.value.length < 2) {
+        bookid.style.border = "1px solid red";
+        alert("Enter A valid ID");  
+        return false;   
+}
+if (bookname.value.length < 1) {
+    bookname.style.border = "1px solid red";
+    alert("Enter A Valid BookName");  
+    return false; 
+}  
+if (author.value.length < 2) {
+    author.style.border = "1px solid red";
+    alert("Enter A Valid Author");  r
+    return false; 
+}
+if (publications.value.length < 2) {
+    publications.style.border = "1px solid red";
+    alert("Enter A valid Publications"); 
+    return false; 
+}
 }
