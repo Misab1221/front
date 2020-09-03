@@ -27,7 +27,7 @@ function validated()
 {
     if (email.value.length < 5) {
         email.style.border = "1px solid red";
-        alert("Enter the valid e-mail");  
+        alert("Enter the valid user-id");  
         email.style.display="block";
         email.focus();
         return false;
